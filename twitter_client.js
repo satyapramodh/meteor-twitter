@@ -38,7 +38,11 @@ Twitter.requestCredential = function (options, credentialRequestCompleteCallback
     }
   }
 
-  var loginUrl = Meteor.absoluteUrl(loginPath);
+  if(options.root_url){
+    var loginUrl = Meteor.absoluteUrl(loginPath, { rootUrl: options.root_url });
+  } else {
+    var loginUrl = Meteor.absoluteUrl(loginPath);
+  }
 
   OAuth.launchLogin({
     loginService: "twitter",
