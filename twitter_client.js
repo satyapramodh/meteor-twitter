@@ -1,3 +1,6 @@
+// forked from https://github.com/meteor/meteor/tree/devel/packages/twitter
+// updated by satya pramodh on dec 1 2015
+
 Twitter = {};
 
 // Request Twitter credentials for the user

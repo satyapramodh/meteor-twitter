@@ -1,6 +1,8 @@
 Package.describe({
   summary: "Twitter OAuth flow",
-  version: '1.1.5'
+  version: '1.1.5',
+  name: 'pramodh:meteor-twitter',
+  git: 'https://github.com/whitebeatle/meteor-twitter.git'
 });
 
 Package.onUse(function(api) {
